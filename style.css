@@ -1,0 +1,11 @@
+button,
+div,
+form,
+input {
+  margin: 2px;
+}
+
+#topics-view{
+  display: flex;
+  flex-wrap: wrap;
+}
