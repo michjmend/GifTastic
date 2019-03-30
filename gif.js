@@ -56,7 +56,7 @@ function displayGif() {
       // var stillImage = result.images.fixed_height_still.url;
       // var animatedImage = result.url;
       // var initialState = "animated";
-      var container = $('<div>');
+      var container = $('<div class="card">');
       //dynamically creates a p tag to show the rating of the gif
       var p_rate = $("<p>").text(rating); // example: <p>g</p>
       //dynamically creates an img tag to display the gifs

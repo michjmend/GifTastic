@@ -1,11 +1,20 @@
-button,
+
 div,
 form,
 input {
-  margin: 2px;
+  margin: 5px;
 }
 
 #topics-view{
   display: flex;
   flex-wrap: wrap;
+}
+
+p {
+  text-transform: uppercase;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  padding-left: 5px;
+  background-color: lightslategray;
+  color: azure;
 }
