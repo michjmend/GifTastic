@@ -1,12 +1,12 @@
 // Initial array of topics
-var topics = ["The Office", "Game of Thrones", "The OA", "This Is Us", "The Flash", "How To Get Away With Murder", "The Walking Dead"];
+var topics = ["The Office", "Parks and Rec", "SpongeBob SquarePants", "How To Get Away With Murder", "Game of Thrones"];
 // Function for displaying buttons
 function renderButtons() {
   $("#buttons-view").empty();
   for (var i = 0; i < topics.length; i++) {
     //Dynamically create buttons for each show in the array
     var a = $("<button>");
-    a.addClass("show");
+    a.addClass("show btn btn-light");
     a.attr("data-show", topics[i]);
     a.text(topics[i]);
     $("#buttons-view").append(a);
@@ -19,10 +19,8 @@ $("#add-show").on("click", function(event) {
   $("#buttons-view").append(addShow);
   // This line grabs the input from the textbox
   var show = $("#show-input").val().trim();
-  console.log(show);
   // Adding the show from the textbox to our array
   topics.push(show);
-  console.log(topics);
   // Calling renderButtons which handles the processing of our show array
   renderButtons();
 });
@@ -60,7 +58,7 @@ function displayGif() {
       //dynamically creates a p tag to show the rating of the gif
       var p_rate = $("<p>").text(rating); // example: <p>g</p>
       //dynamically creates an img tag to display the gifs
-      var gifImage = $("<img>");
+      var gifImage = $("<img height='200px' width= 'auto'>");
       gifImage.attr('id', 'showGif');
       gifImage.attr("src", result.images.original_still.url);
       gifImage.attr("data-still", result.images.original_still.url);
