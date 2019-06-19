@@ -5,7 +5,7 @@ To see this project in action, click [here!](https://michjmend.github.io/GifTast
 
 Before you can make any part of our site work, you need to create an array of strings, each one related to a topic that interests you. In this project, you can checkout Gifs for TV topics :tv:
 
-![SpongeBob watching TV](./GifTastic/watch-spongebob-12.png)
+![SpongeBob watching TV](watch-spongebob-12.png)
 
 In this assignment, I was to use a loop that appends a button for each string in the array.
 When the user clicks on a button, the page should grab 10 static, non-animated gif images from the GIPHY API and place them on the page.
